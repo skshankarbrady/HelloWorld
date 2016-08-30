@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <head><title>Demo</title>
 <script>
@@ -37,4 +38,45 @@ My Page
 
 </body>
 
+=======
+<html>
+<head><title>Demo</title>
+<script>
+
+
+function LoadData(a, b){
+	alert("2 Parameters");
+}
+function LoadData(a, b, c){
+	alert("3 Parameters");
+}
+function LoadData(a, b, c, d, e){
+	alert("5 Parameters");
+}
+
+function showNewWin(){
+var retVal = window.open('popup_page.html', '_blank', 'height=685,width=800,status=yes,toolbar=no,menubar=no,location=no,resizable=no');
+//alert(retVal);
+console.log(retVal);
+
+
+}
+
+function showModalPopup(){
+retVal = window.showModalDialog('popup_page.html', 'dialogHeight:610px;dialogWidth:790px;center:yes;resizable:yes;toobar:no;status:no;scroll:no'); 
+
+}
+</script>
+
+</head>
+<body>
+<button id="bNewWindow" onclick="showNewWin()" type="button">Open New Window</button>
+<button id="bNewModalDialog" onclick="showModalPopup()" type="button">Open New Modal Dialogue</button>
+My Page
+
+
+
+</body>
+
+>>>>>>> origin/master
 </html>
