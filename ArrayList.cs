@@ -1,15 +1,11 @@
 using System;
-using System.Collections.Generic;
 using System.Collections;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArrayListPrac
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             ArrayList alNumList = new ArrayList();
             alNumList.Add(100);
@@ -21,8 +17,6 @@ namespace ArrayListPrac
                 Console.WriteLine(alNumList[i]);
             }            
             UpdateList(alNumList);
-
-            Console.ReadKey();
             
         }
         public static void UpdateList(ArrayList alNumList)
